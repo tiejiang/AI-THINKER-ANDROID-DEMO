@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_bg_shape"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/TopLayout"
+        android:background="@color/transparent">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:src="@drawable/return_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:visibility="visible"
+            android:padding="10dp"
+            android:text="time"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@drawable/blue_rectangle_shape"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/ivJpg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.bear.aithinker.a20camera.tool.MyRoundProcess
+            android:id="@+id/my_round_process"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="40dp"
+            android:background="@android:color/transparent"
+            app:roundColor="@android:color/darker_gray"
+            app:roundProgressColor="@android:color/holo_orange_dark"
+            app:textColor="@android:color/holo_blue_bright"
+            app:textSize="22sp" />
+
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+
+        <RelativeLayout
+            android:id="@+id/rlphote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/ivPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/btn_camera_normal" />
+
+            <TextView
+                android:id="@+id/tvSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="24dp"
+                android:layout_toRightOf="@id/ivPhoto"
+                android:drawableTop="@drawable/save_photo"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="保存"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/tvRotation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="24dp"
+                android:layout_toLeftOf="@id/ivPhoto"
+                android:drawableTop="@drawable/btn_shake_v5_pressed"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="旋转"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvRadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="图片格式"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

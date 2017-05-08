@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">A20Camera</string>
+
+    <string name="VGA">VGA(640*480)</string>
+    <string name="QVGA">QVGA(320*240)</string>
+    <string name="QQVGA">QQVGA(160*120)</string>
+    <string name="tvApSsidTitle">SSID: </string>
+    <string name="tvPasswordTitle">Password: </string>
+    <string name="switchIsSsidHiddenTitle">SSID is Hidden</string>
+    <string name="btnConfirmTitle">Confirm</string>
+    <string name="app_version">v0.3.0</string>
+    <string name="prompt_ssap">Wifi-SSID</string>
+    <string name="dialog_nonet_msg">手机还未连上Wi-Fi(Ai-Thinker-A20)\n请连接上设备接入的Wi-Fi（Ai-Thinker-A20）</string>
+</resources>
